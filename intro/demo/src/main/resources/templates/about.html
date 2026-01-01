@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>About - Hospital System</title>
+    <link rel="stylesheet" th:href="@{/css/styles.css}">
+</head>
+<body>
+
+    <div th:replace="~{fragments/header :: header}"></div>
+    
+    <div class="container">
+        
+        <h2>About This Project</h2>
+        
+        <div class="card">
+            <p>Welcome to the Hospital Appointment System - a comprehensive Spring Boot tutorial project 
+               designed to teach fundamental Spring Framework concepts through hands-on implementation.</p>
+        </div>
+        
+        <div class="card">
+            <h3>Technology Stack</h3>
+            <ul style="line-height: 1.8; color: #4a5568;">
+                <li><strong>Spring Boot 3.3.0</strong> - Modern Java framework</li>
+                <li><strong>Spring MVC</strong> - Web application architecture</li>
+                <li><strong>Thymeleaf</strong> - Server-side template engine</li>
+                <li><strong>Jakarta EE 10</strong> - Enterprise Java standards</li>
+                <li><strong>Java 21</strong> - Latest LTS version</li>
+                <li><strong>Maven</strong> - Dependency management and build tool</li>
+            </ul>
+        </div>
+        
+        <div class="card">
+            <h3>Spring Concepts Demonstrated</h3>
+            <ul style="line-height: 1.8; color: #4a5568;">
+                <li>✅ <strong>Dependency Injection</strong> - Constructor-based DI throughout application</li>
+                <li>✅ <strong>IoC Container</strong> - Spring Application Context bean management</li>
+                <li>✅ <strong>Component Scanning</strong> - Automatic bean discovery</li>
+                <li>✅ <strong>Layered Architecture</strong> - Separation of concerns (Controllers, Services, Repositories)</li>
+                <li>✅ <strong>MVC Pattern</strong> - Model-View-Controller separation</li>
+                <li>✅ <strong>Bean Lifecycle</strong> - @PostConstruct initialization hooks</li>
+                <li>✅ <strong>Spring MVC</strong> - Request mapping and HTTP handling</li>
+                <li>✅ <strong>Thymeleaf Integration</strong> - Dynamic server-side HTML rendering</li>
+            </ul>
+        </div>
+        
+        <div class="card" style="background: #ebf8ff; border-left: 4px solid #4299e1;">
+            <h4 style="color: #2c5282; margin-top: 0;">🎓 Learning Objectives</h4>
+            <p style="color: #2d3748;">
+                This project teaches you how to build a complete web application using Spring Boot,
+                understanding core concepts like dependency injection, component scanning, and layered architecture.
+            </p>
+        </div>
+        
+        <div style="margin-top: 30px; text-align: center;">
+            <a th:href="@{/}" class="btn" style="background: #718096;">← Back to Home</a>
+        </div>
+        
+    </div>
+    
+    <div th:replace="~{fragments/footer :: footer}"></div>
+
+</body>
+</html>

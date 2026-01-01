@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hospital Appointment System - Home</title>
+    
+    <!-- Link to our CSS file using Thymeleaf URL expression -->
+    <link rel="stylesheet" th:href="@{/css/styles.css}">
+</head>
+<body>
+
+    <!-- Include header fragment -->
+    <div th:replace="~{fragments/header :: header}"></div>
+    
+    <div class="container">
+        
+        <!-- Welcome Card -->
+        <div class="card">
+            <h2>Welcome to Our Hospital Appointment System</h2>
+            <p>This is a Spring Boot tutorial project demonstrating core concepts:</p>
+            <ul style="margin-top: 15px; line-height: 1.8;">
+                <li>✅ <strong>Dependency Injection</strong> - Constructor-based DI</li>
+                <li>✅ <strong>IoC Container</strong> - Spring Application Context</li>
+                <li>✅ <strong>Component Scanning</strong> - Auto-discovery of beans</li>
+                <li>✅ <strong>Layered Architecture</strong> - Controllers, Services, Repositories</li>
+                <li>✅ <strong>MVC Pattern</strong> - Model-View-Controller</li>
+                <li>✅ <strong>Thymeleaf Integration</strong> - Server-side rendering</li>
+            </ul>
+        </div>
+        
+        <!-- Status Card -->
+        <div class="card" style="background: #d4edda; border-left: 4px solid #28a745;">
+            <h3 style="color: #155724; margin-top: 0;">✅ Initial Setup Complete!</h3>
+            <p style="color: #155724;">
+                Your Spring Boot application is running successfully on port 8080.
+            </p>
+            <p style="color: #155724; margin-top: 10px;">
+                <strong>Next Steps:</strong> Follow the tutorial to add models, repositories, services, and controllers.
+            </p>
+        </div>
+        
+        <!-- Info Section -->
+        <div class="card" style="background: #edf2f7;">
+            <h3 style="color: #2d3748;">Project Configuration</h3>
+            <ul style="color: #4a5568; line-height: 1.8;">
+                <li><strong>Spring Boot Version:</strong> 3.3.0</li>
+                <li><strong>Java Version:</strong> 21</li>
+                <li><strong>Package:</strong> introproject.demo</li>
+                <li><strong>Port:</strong> 8080</li>
+                <li><strong>Template Engine:</strong> Thymeleaf</li>
+                <li><strong>DevTools:</strong> Enabled (auto-restart)</li>
+            </ul>
+        </div>
+        
+    </div>
+    
+    <!-- Include footer fragment -->
+    <div th:replace="~{fragments/footer :: footer}"></div>
+
+</body>
+</html>
