@@ -1,0 +1,4 @@
+com\medical\controller\HealthController.class
+com\medical\domain\Patient.class
+com\medical\repository\PatientRepository.class
+com\medical\AppointmentSystemApplication.class

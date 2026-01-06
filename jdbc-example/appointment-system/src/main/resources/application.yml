@@ -1,0 +1,27 @@
+spring:
+  application:
+    name: appointment-system
+
+  datasource:
+    url: jdbc:postgresql://localhost:5432/medical_system
+    username: medicaladmin
+    password: SecurePass123!
+    driver-class-name: org.postgresql.Driver
+    hikari:
+      maximum-pool-size: 10
+      minimum-idle: 5
+      idle-timeout: 300000
+      connection-timeout: 20000
+      pool-name: MedicalHikariPool
+
+  sql:
+    init:
+      mode: always
+
+server:
+  port: 8080
+
+logging:
+  level:
+    org.springframework.jdbc.core: DEBUG
+    com.medical: DEBUG
