@@ -1,0 +1,23 @@
+spring:
+  application:
+    name: hospital-cassandra-system
+    
+  cassandra:
+    keyspace-name: hospital_system
+    contact-points: 127.0.0.1
+    port: 9042
+    local-datacenter: datacenter1
+    schema-action: create-if-not-exists
+      
+logging:
+  level:
+    "[com.datastax.oss.driver]": INFO
+    "[org.springframework.data.cassandra]": DEBUG
+    "[com.healthcare.hospital]": DEBUG
+
+springdoc:
+  api-docs:
+    path: /v3/api-docs
+  swagger-ui:
+    path: /swagger-ui.html
+    enabled: true

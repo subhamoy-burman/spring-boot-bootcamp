@@ -1,0 +1,3 @@
+com\healthcare\hospital\domain\Patient.class
+com\healthcare\hospital\domain\MedicalEvent.class
+com\healthcare\hospital\repository\MedicalEventRepository.class
