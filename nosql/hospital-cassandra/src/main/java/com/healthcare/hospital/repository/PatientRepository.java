@@ -14,7 +14,7 @@ import java.util.UUID;
  *   - UUID is the primary key type
  * 
  * Inherited methods from CrudRepository:
- *   - save(Patient)        → UPSERT
+ *   - save(Patient)        → UPSERT //INSERT INTO patients (patientid, patient_name, ...) VALUES (?, ?, ...)
  *   - findById(UUID)       → Single lookup (fast - partition key)
  *   - findAll()            → Scan all tables (SLOW - avoid in production)
  *   - count()              → Count all rows (SLOW - full table scan)
