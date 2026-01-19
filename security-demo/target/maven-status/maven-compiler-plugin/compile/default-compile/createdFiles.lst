@@ -1,0 +1,4 @@
+com\videostream\controller\HomeController.class
+com\videostream\config\SecurityConfig.class
+com\videostream\service\VideoService.class
+com\videostream\VideoStreamingApplication.class
